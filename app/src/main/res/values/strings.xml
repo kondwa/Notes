@@ -2,4 +2,6 @@
     <string name="app_name">Notes</string>
     <string name="facebook_application_id" translatable="false">388502992820915</string>
     <string name="facebook_login_protocol_scheme" translatable="false">fb388502992820915</string>
+    <string name="twitter_consumer_key" translatable="false">zMnDsEyRwY4vRNlVh4Db8H8RC</string>
+    <string name="twitter_consumer_secret" translatable="false">USfAmfEIGY7VQvQw4dl6igJYc0AfwndBoPI92MEi7Hre8eH0xH</string>
 </resources>

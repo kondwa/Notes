@@ -44,6 +44,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth-ktx'
     implementation 'com.firebaseui:firebase-ui-auth:7.2.0'
     implementation 'com.facebook.android:facebook-login:[8,9)'
+    implementation 'com.twitter.sdk.android:twitter-core:3.1.1'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
