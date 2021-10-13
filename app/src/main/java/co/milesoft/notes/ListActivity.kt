@@ -30,12 +30,14 @@ class ListActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            R.id.mnuSignOut ->{
-                FirebaseAuth.getInstance().signOut()
-                finish()
+        return when(item.itemId){
+            R.id.action_settings ->{
+                val intent = Intent(this,SettingsActivity::class.java)
+                startActivity(intent)
+                true
             }
+            else -> super.onOptionsItemSelected(item)
         }
-        return super.onOptionsItemSelected(item)
+
     }
 }

@@ -33,11 +33,12 @@ class MainActivity : AppCompatActivity() {
                 .setAvailableProviders(providers)
                 .setIsSmartLockEnabled(!BuildConfig.DEBUG,true)
                 .enableAnonymousUsersAutoUpgrade()
+                .setTheme(R.style.SignInTheme)
                 .build(), RC_SIGN_IN
             )
         }
         val auth = FirebaseAuth.getInstance()
-        if (auth.currentUser != null && !auth.currentUser!!.isAnonymous){
+        if (auth.currentUser != null && !auth.currentUser!!.isAnonymous && auth.currentUser?.providerData?.size ?: 0 > 0){
             val intent = Intent(this, ListActivity::class.java)
             intent.putExtra(USER_ID,auth.currentUser?.uid)
             startActivity(intent)

@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Notes">
         <activity
+            android:name=".SettingsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/Theme.Notes.NoActionBar" />
+        <activity
             android:name=".NoteActivity"
             android:exported="true" />
         <activity
